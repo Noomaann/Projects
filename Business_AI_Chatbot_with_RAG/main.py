@@ -17,7 +17,7 @@ load_dotenv()
 app = FastAPI(title="Business AI Chatbot API")
 
 
-DB_URL = "postgresql+psycopg2://admin:adminpassword@127.0.0.1:5433/rag_db"
+DB_URL = os.getenv("DATABASE_URL", "postgresql+psycopg2://admin:adminpassword@127.0.0.1:5433/rag_db")
 COLLECTION = "business_docs_v4"
 
 
