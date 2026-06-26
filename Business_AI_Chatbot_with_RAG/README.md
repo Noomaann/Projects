@@ -219,8 +219,8 @@ MIT License — free to use, modify, and distribute.
 ## 👤 Author
 
 **Abdul Kader Noman**
-- GitHub: [@YOUR_USERNAME](https://github.com/Noomaann/)
-- LinkedIn: [Your LinkedIn](https://www.linkedin.com/in/md-abdul-kader-7b93b7344/)
+- GitHub: [@Noomaann](https://github.com/Noomaann/)
+- LinkedIn:(https://www.linkedin.com/in/md-abdul-kader-7b93b7344/)
 - Upwork / Fiverr: [Your Profile Link]
 
 ---
