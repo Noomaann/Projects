@@ -1,0 +1,13 @@
+fastapi
+uvicorn
+langchain
+langchain-google-genai
+langchain-community
+langchain-text-splitters
+psycopg2-binary
+pgvector
+pypdf
+beautifulsoup4
+streamlit
+python-dotenv
+requests
