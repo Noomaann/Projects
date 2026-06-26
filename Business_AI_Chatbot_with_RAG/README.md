@@ -54,7 +54,7 @@ A production-ready **Retrieval-Augmented Generation (RAG)** chatbot that lets bu
 
 ### 1. Clone the repository
 ```bash
-git clone https://github.com/YOUR_USERNAME/business-ai-chatbot.git
+git clone https://github.com/Noomaann/business-ai-chatbot.git
 cd business-ai-chatbot
 ```
 
@@ -219,8 +219,8 @@ MIT License — free to use, modify, and distribute.
 ## 👤 Author
 
 **Abdul Kader Noman**
-- GitHub: [@YOUR_USERNAME](https://github.com/YOUR_USERNAME)
-- LinkedIn: [Your LinkedIn](https://linkedin.com/in/yourprofile)
+- GitHub: [@YOUR_USERNAME](https://github.com/Noomaann/)
+- LinkedIn: [Your LinkedIn](https://www.linkedin.com/in/md-abdul-kader-7b93b7344/)
 - Upwork / Fiverr: [Your Profile Link]
 
 ---
