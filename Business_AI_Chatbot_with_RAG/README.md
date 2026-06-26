@@ -4,6 +4,22 @@ A production-ready **Retrieval-Augmented Generation (RAG)** chatbot that lets bu
 
 ---
 
+## 🌐 Live Demo
+
+> **Try it out — no installation required!**
+
+| Service | URL |
+|---------|-----|
+| 💬 **Chatbot Interface** | [projects-production-e786.up.railway.app](https://projects-production-e786.up.railway.app) |
+| ⚡ **Backend API** | [just-freedom-production.up.railway.app](https://just-freedom-production.up.railway.app) |
+
+**How to test:**
+1. Open the Chatbot Interface link above
+2. Upload any PDF from the sidebar
+3. Ask questions about your document in the chat!
+
+---
+
 ## ✨ Features
 
 - 📄 **PDF Upload & Indexing** — Upload any business document and the system automatically parses, chunks, embeds, and stores it
@@ -218,9 +234,9 @@ MIT License — free to use, modify, and distribute.
 
 ## 👤 Author
 
-**Abdul Kader Noman**
-- GitHub: [@Noomaann](https://github.com/Noomaann/)
-- LinkedIn:(https://www.linkedin.com/in/md-abdul-kader-7b93b7344/)
+**[Abdul Kader Noman]**
+- GitHub: [Noomaann](https://github.com/Noomaann)
+- LinkedIn: [Click here](https://www.linkedin.com/in/md-abdul-kader-7b93b7344/)
 - Upwork / Fiverr: [Your Profile Link]
 
 ---
