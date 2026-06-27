@@ -164,7 +164,7 @@ Make sure you have the following installed:
 
 **1. Clone the repository**
 ```bash
-git clone https://github.com/your-username/ai-sales-outreach-agent.git
+git clone https://github.com/Noomaann/ai-sales-outreach-agent.git
 cd ai-sales-outreach-agent
 ```
 
@@ -304,18 +304,6 @@ Full interactive API documentation available at `http://localhost:8000/docs` (Sw
    → Backend dispatches email via SMTP (Gmail)
    → Lead is updated in the database
 ```
-
----
-
-## 📸 Screenshots
-
-> *Add screenshots of your running application here.*
-
-| Lead Management | Email Generation | Email Preview |
-|---|---|---|
-| `screenshot_leads.png` | `screenshot_ai_gen.png` | `screenshot_preview.png` |
-
----
 
 ## 🤝 Contributing
 
