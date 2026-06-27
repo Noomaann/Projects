@@ -336,6 +336,20 @@ This project is licensed under the **MIT License** — see the [LICENSE](LICENSE
 
 <div align="center">
 
+👤 Author
+
+<div align="center">
+Abdul Kader Noman
+
+<p>
+  <a href="https://github.com/Noomaann">
+    <img src="https://img.shields.io/badge/GitHub-Noomaann-181717?style=for-the-badge&logo=github&logoColor=white" />
+  </a>
+  <a href="https://www.linkedin.com/in/md-abdul-kader-7b93b7344/">
+    <img src="https://img.shields.io/badge/LinkedIn-Abdul_Kader_Noman-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" />
+  </a>
+</p>
+</div>
 **Built with ❤️ using FastAPI, Streamlit, LangChain & Google Gemini**
 
 *If you found this project helpful, please consider giving it a ⭐ on [ai-sales-outreach-agent](https://github.com/your-username/ai-sales-outreach-agent)*
