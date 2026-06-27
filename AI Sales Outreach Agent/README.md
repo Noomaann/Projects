@@ -334,8 +334,6 @@ This project is licensed under the **MIT License** — see the [LICENSE](LICENSE
 
 ---
 
-<div align="center">
-
 👤 Author
 
 <div align="center">
@@ -350,6 +348,7 @@ Abdul Kader Noman
   </a>
 </p>
 </div>
+
 **Built with ❤️ using FastAPI, Streamlit, LangChain & Google Gemini**
 
 *If you found this project helpful, please consider giving it a ⭐ on [ai-sales-outreach-agent](https://github.com/your-username/ai-sales-outreach-agent)*
