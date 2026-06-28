@@ -1,0 +1,22 @@
+version: '3.8'
+
+services:
+  backend:
+    build: ./backend
+    container_name: support_backend
+    ports:
+      - "8080:8000"
+    env_file:
+      - .env  # <-- এই লাইন দুটি আবার যোগ করুন (আপনার .env ফাইলটি যেখানে আছে সেই পাথ দেবেন)
+    restart: always
+
+  frontend:
+    build: ./frontend
+    container_name: support_frontend
+    ports:
+      - "8505:8505"
+    environment:
+      - API_URL=http://backend:8000
+    depends_on:
+      - backend
+    restart: always

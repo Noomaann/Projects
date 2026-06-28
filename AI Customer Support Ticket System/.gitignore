@@ -1,0 +1,58 @@
+# ===========================
+# SENSITIVE FILES - NEVER COMMIT
+# ===========================
+.env
+*.env
+
+# ===========================
+# Python
+# ===========================
+__pycache__/
+*.py[cod]
+*$py.class
+*.pyo
+*.pyd
+.Python
+*.so
+
+# Virtual Environments
+venv/
+env/
+ENV/
+.venv/
+
+# Distribution / packaging
+dist/
+build/
+*.egg-info/
+*.egg
+
+# ===========================
+# HuggingFace Model Cache
+# ===========================
+.cache/
+models/
+*.bin
+*.safetensors
+
+# ===========================
+# IDE Files
+# ===========================
+.vscode/
+.idea/
+*.swp
+*.swo
+*.DS_Store
+Thumbs.db
+
+# ===========================
+# Logs
+# ===========================
+*.log
+logs/
+
+# ===========================
+# Database
+# ===========================
+*.sqlite3
+*.db
