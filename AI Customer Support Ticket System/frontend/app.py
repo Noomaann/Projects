@@ -4,19 +4,14 @@ import pandas as pd
 import plotly.graph_objects as go
 import os
 
-# ডকারের জন্য ডাইনামিক URL সেটআপ
 BASE_URL = os.getenv("API_URL", "http://127.0.0.1:8000")
 
-# পেজ কনফিগারেশন
 st.set_page_config(
     page_title="AI Support Desk",
     layout="wide",
     initial_sidebar_state="expanded"
 )
 
-# ─────────────────────────────────────────
-#  GLOBAL CSS
-# ─────────────────────────────────────────
 st.markdown("""
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
@@ -78,9 +73,7 @@ st.markdown("""
 </style>
 """, unsafe_allow_html=True)
 
-# ─────────────────────────────────────────
-#  SIDEBAR (Add New Ticket Form)
-# ─────────────────────────────────────────
+
 with st.sidebar:
     st.markdown("<h3 style='color: #0f172a;'>Add New Ticket</h3>", unsafe_allow_html=True)
     st.markdown("Simulate a customer sending a message.")
@@ -101,9 +94,7 @@ with st.sidebar:
             except Exception as e:
                 st.error(f"Error connecting to backend: {e}")
 
-# ─────────────────────────────────────────
-#  HERO HEADER
-# ─────────────────────────────────────────
+
 st.markdown("""
 <div class="hero-wrap">
     <span class="hero-badge">Live · AI-Powered</span>
@@ -112,9 +103,6 @@ st.markdown("""
 </div>
 """, unsafe_allow_html=True)
 
-# ─────────────────────────────────────────
-#  FETCH DATA & RENDER
-# ─────────────────────────────────────────
 try:
     # ডকার ফ্রেন্ডলি URL ব্যবহার করা হয়েছে
     response = requests.get(f"{BASE_URL}/tickets/all", timeout=5)
@@ -135,7 +123,7 @@ try:
             neg_sent = len(df[df["sentiment"] == "Negative"])
             top_cat = df["category"].mode()[0]
 
-            # ── METRIC CARDS ──
+
             st.markdown(f"""
             <div class="cards-row">
                 <div class="metric-card"><div class="card-val">{total}</div><div class="card-label">Total Tickets</div></div>
@@ -145,7 +133,7 @@ try:
             </div>
             """, unsafe_allow_html=True)
 
-            # ── CHARTS ──
+
             st.markdown('<div class="sec-title">Website Stats</div>', unsafe_allow_html=True)
             c1, c2 = st.columns([6, 4], gap="large")
 
@@ -156,7 +144,7 @@ try:
                 title=dict(font=dict(color="#0f172a", size=16), x=0.01, y=0.98),
             )
 
-            # Bar Chart
+    
             with c1:
                 cat_df = df["category"].value_counts().reset_index()
                 bar_colors = ["#29B6F6", "#42A5F5", "#81D4FA", "#039BE5", "#00ACC1", "#4DD0E1"]
@@ -169,7 +157,7 @@ try:
                 st.plotly_chart(fig1, width="stretch")
                 st.markdown('</div>', unsafe_allow_html=True)
 
-            # Donut Chart
+           
             with c2:
                 pri_df = df["priority_score"].value_counts().reset_index()
                 donut_colors = ["#9C27B0" if p=="High" else "#FFCA28" if p=="Medium" else "#66BB6A" for p in pri_df["priority_score"]]
@@ -182,7 +170,7 @@ try:
                 st.plotly_chart(fig2, width="stretch")
                 st.markdown('</div>', unsafe_allow_html=True)
 
-            # ── COLLAPSIBLE TICKET LIST ──
+          
             st.markdown('<div class="sec-title">Recent Tickets</div>', unsafe_allow_html=True)
             
             for t in tickets:
