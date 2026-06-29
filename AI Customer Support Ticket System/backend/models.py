@@ -8,14 +8,14 @@ class Ticket(Base):
     id = Column(Integer, primary_key=True, index=True)
     customer_message = Column(Text, nullable=False)
     
-    # AI Predictions (AI মডেল থেকে পাওয়া ডেটা)
-    category = Column(String, index=True, nullable=True) # যেমন: Refund, Pricing, Technical Issue
-    sentiment = Column(String, nullable=True)            # যেমন: Positive, Negative, Neutral
-    priority_score = Column(String, nullable=True)       # যেমন: High, Medium, Low
+  
+    category = Column(String, index=True, nullable=True) 
+    sentiment = Column(String, nullable=True)            
+    priority_score = Column(String, nullable=True)     
     
-    # Auto Reply Draft
+
     ai_reply_draft = Column(Text, nullable=True)
-    is_approved = Column(Boolean, default=False)         # অ্যাডমিন রিপ্লাই অ্যাপ্রুভ করেছে কিনা
+    is_approved = Column(Boolean, default=False)        
     
-    # Time Tracking
+
     created_at = Column(DateTime, default=datetime.utcnow)
