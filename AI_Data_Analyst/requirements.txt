@@ -1,0 +1,13 @@
+fastapi
+uvicorn
+streamlit
+pandas
+sqlalchemy
+python-dotenv
+python-multipart
+langchain
+langchain-google-genai
+langchain-community
+plotly
+requests
+psycopg2-binary
